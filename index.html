@@ -133,31 +133,54 @@
       
    }*/
     /* Style the label to act as the checkbox */
-    .custom-checkbox {
+    .custom-checkbox-hambuger {
         display: inline-block;
-        /*display: block;
-        /*margin-top: -3em;
-        margin-left: 3em;*/
         width: 8em;
         height: 5em;
         border: none;
         background-image: url("https://t4.ftcdn.net/jpg/13/64/63/37/240_F_1364633746_nLADB58D9PgH9s0aWnN63qcNYpCNOoC6.webp"); /* Image for unchecked state */
         background-size: cover;
         outline-color: white;
-        /*background-color: red;
-        /*cursor: pointer;
-        transition: transform 0.2s ease;*/
+    }
+    .custom-checkbox-cheeseburger {
+        display: inline-block;
+        width: 8em;
+        height: 6em;
+        border: none;
+        background-image: url("https://media.gettyimages.com/id/182744943/photo/burger.jpg?s=612x612&w=0&k=20&c=pi20IieXf8UNk6SeJy-cHxubaVD7L5Rnw2i0Qo8vNyM="); /* Image for unchecked state */
+        background-size: cover;
+        outline-color: white;
+    }
+    .custom-checkbox-hotdog {
+        display: inline-block;
+        width: 8em;
+        height: 6em;
+        border: none;
+        background-image: url("https://media.gettyimages.com/id/182819295/photo/a-hot-dog-on-a-bun-with-mustard.jpg?s=612x612&w=0&k=20&c=hMQgMIoAKH9OK410YoEM5YwbnVV0zTTcb9G1uhXCF7c="); /* Image for unchecked state */
+        background-size: cover;
+        outline-color: white;
+        
+    }
+    .custom-checkbox-veggiewrap {
+        display: inline-block;
+        width: 8em;
+        height: 6em;
+        border: none;
+        background-image: url("https://media.gettyimages.com/id/154963433/photo/chicken-deli-wrap.jpg?s=612x612&w=0&k=20&c=_HEAwK1TjKXY6KVf-vqzS7BjpOMrXavSVGlANzEBdJQ="); /* Image for unchecked state */
+        background-size: cover;
+        outline-color: white;
+        
     }
     #placement {
         text-align: center;
         line-height: 0.5em;
         width: 8em;
     }
-    #placement {
-        text-align: center;
-        line-height: 0.5em;
-        width: 8em;
+    table {
+      margin-left: 1em;
     }
+
+    
 </style>
 </head>
 
@@ -172,9 +195,10 @@
 
 <tbody>
     <table>
-        <tr><td><input type="checkbox"></td><td><input class="custom-checkbox"></td></tr>
-        <!---<tr><td></td><td><span style="color:red">Hambuger</span></td></tr>--->
-        <tr><td></td><td><div id="placement">Hamburger</td></div></tr>
+        <tr><td><input type="checkbox"></td><td><input class="custom-checkbox-hambuger"></td><td><input type="checkbox"></td><td><input class="custom-checkbox-cheeseburger"></td></tr>
+        <tr><td></td><td><div id="placement">Hamburger</td></div><td></td><td><div id="placement">Cheeseburger</td></div></tr>
+        <tr><td><input type="checkbox"></td><td><input class="custom-checkbox-hotdog"></td><td><input type="checkbox"></td><td><input class="custom-checkbox-veggiewrap"></td></tr>
+        <tr><td></td><td><div id="placement">Hotdog</td></div><td></td><td><div id="placement">Veggie Wrap</td></div></tr>
     </table>
 </tbody>
 
