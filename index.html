@@ -3,24 +3,36 @@
    <head>
       <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Small Screen Parkplace Website</title>
+      <title>iPad Parkplace Dinning Room</title>
    </head>
       <style>
          body {
-            background-color: #8AA5C1;
+            /*background-color: #8AA5C1;*/
+            background-color: lightgray;
          }
-         #container {
+          #container {
+            max-width: 90em;
+            margin: -4em 15em 5em 9em;
+             /*margin: 1em auto;*/
+            box-sizing: border-box;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: black;
+        }
+         /*#container {
             position: absolute;
             max-width: 23em;
             margin: 2em auto;
             box-sizing: border-box;
-        }  
+        }*/
+         /*#container {
+            max-width: 30em;
+            margin: auto;
+        } 
         #layout {
             text-align: left;
         }
-         #one {
-            /*background-color: lemonchiffon;*/
-            background-color: white;
+         /*#one {
+            background-color: lemonchiffon;
             padding: .5em;
             border-style: solid;
             border-width: .125em;
@@ -28,9 +40,9 @@
             font-family: Arial, Helvetica, sans-serif;
             font-size: small;
             color: black;
-         }
+         }*/
          .USA {
-                font-size: small;
+                font-size: large;
                 box-shadow: 0 4px 2px rgba(0,0,0,.5);
                 border-style: solid;
                 border-width: .125em;
@@ -38,323 +50,229 @@
                 border-color: black;
                 background-color: aquamarine;
                 position: relative;
-                top: 0px;
                 transition:
                 background-color 0.5s ease-in,
                 border-color 0.5s ease-in,
                 top 0.2s,
                 box-shadow 0.2s;
-
-            }
-            .USA:hover, .USA:focus {
-            /*.USA:hover {*/
-            cursor: pointer;
-            background-color: lightgreen;
-            /*background-color: #c6de89;*/
-            border-color: darkkhaki;
-            }
-            /*.USA:focus { 
-            background-color: #c6de89;
-            border-color: #a3c058;
-            }*/
-            .USA:active {
-            /*background-color: limegreen;*/
-            top: 3px;
-            box-shadow: 0 1px 2px rgba(0,0,0,.5);
-            }        
+            } 
          img {
             border-width: .5em;
             border-style: solid;
-            border-color: darkkhaki;
+            border-color: lemonchiffon;
             float: left;
+            transition-timing-function: ease-in;
          }
+         .fade {
+            animation-name: fade;
+            animation-duration: 5s;
+         }
+        @keyframes fade {
+            from {opacity: 0} 
+            to {opacity: 1}
+            }
          #B {
             position: absolute;
-            top: 2em;
-            left: 5em;
+            top: 10em;
+            left: 17em;
          }
          #C {
             position: absolute;
-            top: 2em;
-            left: 14em;
-            animation: bobble .5s 3 ease-in;
+            top: 30.5em;
+            left: 5em;
          }
-         @keyframes bobble {
-    0% {
-        transform: translateY(-5px);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
-    75% {
-        transform: translateY(-10px);
-    }
-    100% {
-        transform: translateY(-1px);
-    }
-}
-         #lawn {
-            z-index: 50;
+         #D {
             position: absolute;
-            background: khaki;
-            border: .125em solid darkgray;
+            top: 30.5em;
+            left: 16em;
          }
-         #monarch {
-            z-index: 50;
+         dialog {
             position: absolute;
-            background: khaki;
-            border: .125em solid darkgray;
+            top: 10em;
+            left: 28em;
+            height: 32em;
+            border-style: solid;
+            border-width: .125em;
+            border-color: black;
+            background-color: lightgray;
          }
-         iframe {
-            border: none;  
-         }
-         td {
-            text-align: center;
-         }
-        #borderbox {
-            background: khaki;
-            width: 25em;
-            height: 22em;
-            padding: .125em;
-            border: .125em solid darkgray;
-            margin: auto;
-         }
-         #senzaiPlants {
-            line-height: .125em;
-         }
-       input[type="checkbox"] {
+
+         input[type="checkbox"] {
         display: block;
         transform: scale(4);
         margin-top: 2em;
         margin-left: 2em;
     }
-    /*#myCheckbox {
-        text-align: center;
-      
-   }*/
-    /* Style the label to act as the checkbox */
+
+
+
     .custom-checkbox-hambuger {
         display: inline-block;
         width: 8em;
-        height: 5em;
+        height: 8em;
+        margin-left: 1em;
         border: none;
-        background-image: url("https://t4.ftcdn.net/jpg/13/64/63/37/240_F_1364633746_nLADB58D9PgH9s0aWnN63qcNYpCNOoC6.webp"); /* Image for unchecked state */
+        background-image: url("https://th.bing.com/th/id/OIG4.gvjozrVnnST1a5GUmwm5?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn"); /* Image for unchecked state */
         background-size: cover;
-        outline-color: white;
+
+        
     }
     .custom-checkbox-cheeseburger {
         display: inline-block;
         width: 8em;
-        height: 6em;
+        height: 8em;
+        margin-left: 1em;
         border: none;
-        background-image: url("https://media.gettyimages.com/id/182744943/photo/burger.jpg?s=612x612&w=0&k=20&c=pi20IieXf8UNk6SeJy-cHxubaVD7L5Rnw2i0Qo8vNyM="); /* Image for unchecked state */
+        background-image: url("https://th.bing.com/th/id/OIG2.B1U9W7bJazAfHuf9.dqi?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn"); /* Image for unchecked state */
         background-size: cover;
-        outline-color: white;
+        
     }
     .custom-checkbox-hotdog {
         display: inline-block;
         width: 8em;
-        height: 6em;
+        height: 8em;
+        margin-left: 1em;
         border: none;
-        background-image: url("https://media.gettyimages.com/id/182819295/photo/a-hot-dog-on-a-bun-with-mustard.jpg?s=612x612&w=0&k=20&c=hMQgMIoAKH9OK410YoEM5YwbnVV0zTTcb9G1uhXCF7c="); /* Image for unchecked state */
+        background-image: url("https://th.bing.com/th/id/OIG2.jZlPkMHEwfdFLUppWEKl?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn"); /* Image for unchecked state */
         background-size: cover;
-        outline-color: white;
         
     }
     .custom-checkbox-veggiewrap {
         display: inline-block;
         width: 8em;
-        height: 6em;
+        height: 8em;
+        margin-left: 1em;
         border: none;
-        background-image: url("https://media.gettyimages.com/id/154963433/photo/chicken-deli-wrap.jpg?s=612x612&w=0&k=20&c=_HEAwK1TjKXY6KVf-vqzS7BjpOMrXavSVGlANzEBdJQ="); /* Image for unchecked state */
+        background-image: url("https://th.bing.com/th/id/OIG1.cYG7QMW3ERk3hGL5EiaD?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn"); /* Image for unchecked state */
+        background-size: cover;
+        
+    }
+    .custom-checkbox-crispychickensalad {
+        display: inline-block;
+        width: 8em;
+        height: 8em;
+        margin-left: 1em;
+        border: none;
+        background-image: url("https://th.bing.com/th/id/OIG4.H1pdKTzmO9IZGNvUb91H?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn"); /* Image for unchecked state */
         background-size: cover;
         outline-color: white;
         
     }
+    .custom-checkbox-monticristo {
+        display: inline-block;
+        width: 8em;
+        height: 8em;
+        margin-left: 1em;
+        border: none;
+        background-image: url("https://th.bing.com/th/id/OIG3.ra_jfZs79XJfPBvuhjEs?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn"); /* Image for unchecked state */
+        background-size: cover;
+        outline-color: white;
+        
+    }
+
     #placement {
         text-align: center;
-        line-height: 0.5em;
+        line-height: 0.75em;
         width: 8em;
     }
     table {
-      margin-left: 1em;
+      margin-left: 0.25em;
     }
+    p {
+        text-decoration: underline;
+    }
+    h3, h4 {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    /*button {
+      position: absolute;
+      font-size: xx-small;
+            top: 11em;
+            left: 9em;
 
-    
-</style>
-</head>
-
+            background-color: darkkhaki;
+            hover: none;
+            active: none;
+            border: none;
+    }*/
+   
+         </style>
    <body>
       <div id="container">
-        <div id="layout">
-            <div id="one">
+        <!---<div id="layout">--->
+            <!---<div id="one">--->
+                <div class="fade">
+                    <img src = "https://github.com/democracy-2025/democracy/blob/main/642.jpg?raw=true" height = 562 width = 688 alt = "642 Floor Plan"></img>
+                    <p id="B"><button class="USA">Order</button></p>
+                </div>
+               <!---<p id="C"><button class="USA">Order</button></p>--->
+            <!---</div>--->
+        <!---</div>--->
 
-                <img src = "https://github.com/democracy-2025/democracy/blob/main/642.jpg?raw=true" height = "220" width = "340" alt = "642 Floor Plan"></img>
+        <tbody>
+            <table>
+                <tr><td></td></tr>
+            </table>
+        </tbody>
 
-                <h3>Entree</h3>
-
+    <form id="myForm">
+        <dialog id="order">
+            <div id="test"></div>
 <tbody>
     <table>
         <tr><td><input type="checkbox"></td><td><input class="custom-checkbox-hambuger"></td><td><input type="checkbox"></td><td><input class="custom-checkbox-cheeseburger"></td></tr>
         <tr><td></td><td><div id="placement">Hamburger</td></div><td></td><td><div id="placement">Cheeseburger</td></div></tr>
         <tr><td><input type="checkbox"></td><td><input class="custom-checkbox-hotdog"></td><td><input type="checkbox"></td><td><input class="custom-checkbox-veggiewrap"></td></tr>
         <tr><td></td><td><div id="placement">Hotdog</td></div><td></td><td><div id="placement">Veggie Wrap</td></div></tr>
+        <tr><td><input type="checkbox"></td><td><input class="custom-checkbox-crispychickensalad"></td><td><input type="checkbox"></td><td><input class="custom-checkbox-monticristo"></td></tr>
+        <tr><td></td><td><div id="placement">Crispy Chicken</td></div><td></td><td><div id="placement">Monti Cristo</td></div></tr>
+        <tr><td></td><td><div id="placement">Salad</td></div><td></tr>
     </table>
-</tbody>
-
-               
-               <!---<img src="https://github.com/expansestream/butterflygarden/blob/main/jfarms_cropped.jpg?raw=true" height="220" width="340" alt="jfarms cropped logo">--->
-
-                  <!---<p id="B"><button class="USA">Lawn Redo</button></p>
-                     <dialog id="lawn">
-                        <span style="text-align: left">
-                        <img src="https://github.com/expansestream/butterflygarden/blob/main/IMG_0091.jpg?raw=true" height="150" width="150" alt="side yard">
-                        <p>In addition to obtaining horticultural knowledge unique to Colorado, jfarmsboulder was interested in CSU&#8217;s Certified Gardener program because there was a section devoted to lawn care. As new homeowners, jfarms was excited to improve the landscape, transform their yard into a xeric paradise, reduce their water bill; in short, letting the lawn grow in accordance with nature.</p>
-                        <p></p> 
-                        <p>One of the first attempts was to transform portions of the front yard into a field of thyme. It never worked because the neighborhood rabbit population made short work of the plantings, even when they were protected with metal-mesh window screen material. Then came the bind weed. It was pervasive.  The owners tried to control it by extracting it from its roots, but alias.  The tap root of a bind weed can be over 6&quot; long!  At this point, it became clear that a &ldquo;mommy makeover&rdquo; was in order.</p>
-                        <p>Fortunately, CSU has a publication outlining the steps to redo one&rsquo;s lawn <a href="https://extension.colostate.edu/docs/pubs/garden/07241.pdf" target="display">click here</a>.  CSU&rsquo;s technique works, with the following caveats:</p>
-                        <ul>
-                           <li>The technique recommends using Roundup&reg; as one of the first steps to kill the existing lawn.  Roundup&reg; does knock out what was previously planted.  It does not, however, inhibit the new growth of the replacement lawn.</li>
-                           <li>Block off the lawn into 6&quot;x6&quot; sections that can be easily managed.  If one chooses to do an entire yard at once, be prepared to follow through in short order.  Unfortunately, jfarms tired doing a large their back section of yard, applying Roundup&reg;, prepping the soil, but delayed planting new seed for 2 weeks.  <span style="color:red">BIG MISTAKE!</span>  With nothing in the ground to germinate, the weeds came back with a vengeance!</li>
-                           <li>CSU&rsquo;s technique showed the most success when shady areas of the existing lawn were replanted as shown above.</li>
-                        </ul>
-                        </span>
-                        <button class="USA" type="reset" id="cancellawn">Close</button>
-                     </dialog>
-                  <script>
-                     document.getElementById("B").addEventListener("click",discreption1,false);
-                        function discreption1() {
-                             dialog = document.getElementById("lawn");
-                             dialog.show();   
-                        };
-                        document.getElementById("cancellawn").addEventListener("click",discreption12,false);
-                        function discreption12() {
-                             dialog = document.getElementById("lawn");
-                             dialog.close();   
-                        };
-                  </script>
-                  
-                  <p id="C"><button class="USA">Monarch Butterflies</button></p>
-                     <dialog id="monarch">
-                        <span style="text-align: left">
-                           <img src="https://monarchwatch.org/waystations/monarch_waystation_program.png" height="150" width="150" alt="monarch_waystation_program">
-                           <p>The seeds of jfarmsboulder were sewn in the fall of 2016.  As the nation was gripped in the presidential election, Denver tv channels began reporting mysterious sightings on their weather radar systems.  For close to two weeks, light blue images, thought to be fog-like moisture, could be seen on their websites.  Public interest soared.  Explanations were few.  Ground clutter was thought to be the culprit, but no.  The images were plumes of Painted Lady butterflies, so dense, that they were detected by radar!  When jfarms approached one of their soon-to-be clients, the expectation was that a butterfly garden would induce the Painted Ladies to return year-after-year.</p>
-                           <p></p>
-                           <p>Well, that never happened.  What did happen was that a large butterfly garden took shape, and the interest shifted to attracting Monarch Butterflies.  In fact, the butterfly garden is registered as a Monarch Way Station, one of the largest in Colorado.</p>  
-                           <p></p>
-                           <p>So, where are the butterflies?  In the eight years since 2016, there have been butterflies in the garden, primarily Painted Ladies, Swallow Tails, and an occasional Monarch or two.  The University of Kansas, the promoter of the Monarch Way Station program, has been monitoring the Monarch population in the United States and Mexico for several years.  This is important because like most of us, jfarms loves to see the concluding segment of a David Attenborough or Morgan Freeman nature documentary conclude with massive swarms of Monarch Butterflies crowding the forests of southern Mexico where they spend the winter.</p>
-                           <p></p>
-                           <p>The Monarchs are in trouble.  The 2023-2024 over-wintering population in Mexico is the 2<sup>nd</sup> lowest ever recorded.  This is well documented in KU&#8217;s Monarch Watch blog <a href=https://monarchwatch.org/blog/ target="display">click here</a>.  Of particular interest is the map of North America showing the flyways of the Monarch.  Colorado is on the extreme (the very extreme) western edge of their flight path.  Hopefully butterfly gardens like the one managed by jfarmsboulder will entice them to take a second look and spend a while as they pass close to Colorado!</p>
-                           <p></p>
-                           <p>Watch 60 Minutes Overtime, April 20<sup>nd</sup>, Monarch Butterflys: <a href=https://www.youtube.com/watch?v=mnXOG7EB8mE target="display">click here</a>.</p>
-                           https://youtu.be/rVu5q6sT5To?si=wFAP_6rGxAfGosf5
-                        </span>
-                        <button class="USA" type="reset" id="cancelmonarch">Close</button>
-                     </dialog>
-                  <script>
-                     document.getElementById("C").addEventListener("click",discreption2,false);
-                        function discreption2() {
-                             dialog = document.getElementById("monarch");
-                             dialog.show();   
-                        };
-                        document.getElementById("cancelmonarch").addEventListener("click",discreption12,false);
-                        function discreption12() {
-                             dialog = document.getElementById("monarch");
-                             dialog.close();   
-                        };
-                  </script>--->
-
-                  <!---<img src="https://github.com/expansestream/butterflygarden/blob/main/IMG_2094%20(2).JPEG?raw=true" height="150" width="150" alt="CA Garden after July summer rain">                  
-                    <p>Thank you for taking a look at jfarmsboulder, a Colorado company founded in the summer of 2016, co-managed by Roz Greene and John Brand. The company was initially created to grow certain <a href = "https://plantselect.org/" target="display">Plant Select<sup>&reg;</sup></a> varieties of xeric plants that will survive the harsh environments of the Colorado Front Range. The company&#8217;s management has been interested in commercial growing for several years, and realized that warming global temperatures will enhance and increase the length of the Colorado growing season.</p>
-                    <img src="https://github.com/expansestream/butterflygarden/blob/main/IMG_0165.jpg?raw=true" height="150" width="150" alt="Indoor Growing">
-                    <p>Several indoor growing medium were explored, including natural and artificial lighting, hydroponic and soil, growing year-round, and partial year growing. The current iteration includes growing seeds in high-quality potting soil and watering with Denver water from the tap.<a href="https://expansestream.github.io/room1SmallSlide/" target=”display”>time lapse</a>. The hydroponic process produces remarkable initial results, only to be decimated by aphids. Where they come from, and how they get indoors is one of life's greatest mysteries.</p>--->
-                    <!---<div id="borderbox">
-                        <img style="margin: 2em 1.25em 1.25em 1.75em" src="https://github.com/expansestream/butterflygarden/blob/main/IMG_0589.jpg?raw=true" height="200" width="auto" alt="Room 1">
-                        <span style="text-align: center"><p>To see how fast things grow indoors, <a href="https://expansestream.github.io/room1SmallSlide/" target=”display”>click here</a>.</p></span>
-                    </div>
-                    <p></p>
-                    <div id="borderbox">
-                     <img style="margin: 2em 1.25em 1.25em 1.75em" src="https://github.com/expansestream/butterflygarden/blob/main/IMG_0590.jpg?raw=true" height="200" width="auto" alt="Room 2">
-                     <span style="text-align: center"><p>To see how fast things grow indoors, <a href="https://expansestream.github.io/room2SmallSlide/" target=”display”>click here</a>.</p></span>
-                     </div>
-                     <p></p>
-                     <div id="borderbox">
-                        <img style="margin: 2em 1.25em 2em 1.75em" src="https://github.com/expansestream/butterflygarden/blob/main/IMG_0337.jpg?raw=true" height="200" width="auto" alt="Room 2">
-                        <img style="margin: 2em 3.25em 2em 2.50em" src="https://github.com/expansestream/butterflygarden/blob/main/IMG_0337.jpg?raw=true" height="200" width="auto" alt="Room 2">
-                        <span style="text-align: center"><p>To see corresponding back yard growth, <a href="https://expansestream.github.io/backyardSmallSlide/" target=”display”>click here</a>.</p></span>
-                     </div>
-                        <img src="https://github.com/expansestream/butterflygarden/blob/main/IMG_0429.JPG?raw=true" height="150" width="150" alt="Outdoor Milkweed">
-                    <p>Optimal growing conditions include starting seeds immediately following the winter solstice, with germination proceeding through Mother's Day, followed by a hardening-off period to mid-June. The company has expanded to manage outdoor growing spaces in excess of 1/2 acre. The 2024 growing season includes several common xeric varieties:</p>
-                    <p></p>---> 
-                    <!---<table>
-                        <tbody>
-                           <tr><td><img src="https://github.com/expansestream/butterflygarden/blob/main/IMG_0162.jpg?raw=true" height="100" width="100" alt="Purple Coneflower"></td><td><img src="https://github.com/expansestream/butterflygarden/blob/main/IMG_0069.jpg?raw=true" height="100" width="100" alt="Speciosa"></td><td><img src="https://github.com/expansestream/butterflygarden/blob/main/IMG_0110.jpg?raw=true" height="100" width="100" alt="Salvia"></td></tr>
-                           <tr><td>Purple Coneflower</td><td>Speciosa</td><td>Salvia</td></tr>
-                           <tr><td><img src="https://github.com/expansestream/butterflygarden/blob/main/IMG_0106.jpg?raw=true" height="100" width="100" alt="Agastache Coronado"></td><td><img src="https://github.com/expansestream/butterflygarden/blob/main/IMG_0108.jpg?raw=true" height="100" width="100" alt="Asclepias tuberosa"></td><td><img src="https://github.com/expansestream/butterflygarden/blob/main/IMG_0107.jpg?raw=true" height="100" width="100" alt="Russian Sage"></td></tr>
-                           <tr><td>Coronado</td><td>Tuberosa</td><td>Russian Sage</td></tr>
-                           <tr><td><img src="https://github.com/expansestream/butterflygarden/blob/main/IMG_0102.jpg?raw=true" height="100" width="100" alt="Butterfly Bush"></td><td><img src="https://github.com/expansestream/butterflygarden/blob/main/IMG_0112.jpg?raw=true" height="100" width="100" alt="Anise Hyssop"></td><td><img src="https://github.com/expansestream/butterflygarden/blob/main/IMG_0179.jpg?raw=true" height="100" width="100" alt="Rabbit Brush"></td></tr>
-                           <tr><td>Butterfly Bush</td><td>Anise Hyssop</td><td>Rabbit Brush</td></tr>
-                           <tr><td><img src="https://github.com/expansestream/butterflygarden/blob/main/IMG_0097.jpg?raw=true" height="100" width="100" alt="Galardia"></td><td><img src="https://github.com/expansestream/butterflygarden/blob/main/IMG_0111.jpg?raw=true" height="100" width="100" alt="Hollyhock"></td><td><img src="https://github.com/expansestream/butterflygarden/blob/main/IMG_0078.jpg?raw=true" height="100" width="100" alt="Penstemon"></td></tr>
-                           <tr><td>Coreposis</td><td>Hollyhock</td><td>Penstemon</td></tr>
-                           <tr><td><img src="https://github.com/expansestream/butterflygarden/blob/main/IMG_0115.jpg?raw=true" height="100" width="100" alt="Blue Mist Spirea"></td><td><img src="https://github.com/expansestream/butterflygarden/blob/main/IMG_0101.jpg?raw=true" height="100" width="100" alt="Incarnata"></td><td><img src="https://github.com/expansestream/butterflygarden/blob/main/columbine_download.png?raw=true" height="100" width="100" alt="Columbine"></td></tr>
-                           <tr><td>Blue Mist Spirea</td><td>Incarnata</td><td>Columbine</td></tr>
-                           <tr><td><img src="https://github.com/expansestream/butterflygarden/blob/main/IMG_1381.jpg?raw=true" height="100" width="100" alt="Logo"></td><td><img src="https://github.com/expansestream/butterflygarden/blob/main/IMG_0070.jpg?raw=true" height="100" width="100" alt="Speciosa Field"></td><td><img src="https://github.com/expansestream/butterflygarden/blob/main/IMG_0192.JPG?raw=true" height="100" width="100" alt="Hydroponic Trays"></td></tr>
-                           <tr><td>Logo</td><td>Speciosa Field</td><td>Hydroponics</td></tr>
-                           <tr><td><img src="https://github.com/expansestream/butterflygarden/blob/main/IMG_0616.jpg?raw=true" height="100" width="100" alt="Catmint"></td></tr>
-                           <tr><td>Catmint</td></tr>
-                        </tbody>
-                     </table>
-                     <p></p>                 
-                     <img style="border-style: inset" src="https://github.com/expansestream/butterflygarden/blob/main/IMG_0228.jpg?raw=true" height="150" width="200" alt="Certified Gardener Certificate">
-                     <p>In 2021 one the co-managers, John Brand, was designated a <q>Certified Gardener</q> by Colorado State University. CSU&#8217;s Certified Gardener program proves proficiency in several areas. It introduces <q>tribal knowledge</q> to urban farmers, knowledge that would be passed down from generation-to-generation in rural agricultural communities. Topics covered include:
-                        <div id="borderbox">
-                           <ul>
-                              <li>Insects - Which are beneficial.</li>
-                              <li>Plant Diseases - How to identify.</li>
-                              <li>Weeds - Legitimate plants.</li>
-                              <li>The Diagnostic Process - Is it sick?</li>
-                              <li>Identifying Trees and Shrubs - What is it?</li>
-                              <li>Tree Selection and Planting - Planting a tree.</li>
-                              <li>Pruning - Best time to prune.</li>
-                              <li>Soils, Fertilizers & Soil Amendments - A lot!</li>
-                              <li><a href="https://github.com/expansestream/butterflygarden/blob/main/website_herbaceousplantpresentation%20(2).gif?raw=true" target=”display”>Herbaceous Plants</a> - Woody Stems!</li>
-                              <li>Lawn Care - Source of carbon capture?</li>
-                              <li>Irrigation Management - Doing with less.</li>
-                              <li><a href="https://github.com/expansestream/butterflygarden/blob/main/Water_Wise_Landscape_Design.gif?raw=true" target=”display”>Water Wise Landscape Design</a> - Practical applications.</li>
-                              <li>How Plants Grow - Method to the madness!</li>
-                              <li>Tree Fruits - Large fruit.</li>
-                              <li>Small Fruits - Smaller fruit.</li>
-                              <li>Vegetables - Traditional gardening.</li>
-                              </span>
-                           </ul> 
-                        </div>--->
-                        <!---<img src="https://github.com/expansestream/butterflygarden/blob/main/finding_Solice.png?raw=true" alt="Finding Solice in the Soil"> 
-                        img src="https://m.media-amazon.com/images/I/811BIo9DF1L._AC_UY327_FMwebp_QL65_.jpg" alt="Finding Solice in the Soil">
-                        <p>While active in St. John&#8217;s Episcopal Cathedral&#8217;s Green Team, the co-managers were introduced to Dr. Bonnie J. Clark&#8217;s book <span style="text-decoration: underline">Finding Solace in the Soil</span>. Dr. Clark, the Chair of The University of Denver&#8217;s Anthropology Department, recounts 10 field seasons studying the gardens within the Amache internment camp in eastern Colorado. Dr. Clark&#8217;s graduate students excavated and documented the growing spaces tended by Japanese Americans between 1942-1945 at Amache. Her book was read while recuperating from hip surgery. It was an immense source of vision and encouragement, as seen in this self-running PowerPoint:</p>
-                        <img style="border-style: inset" src="https://github.com/expansestream/butterflygarden/blob/main/bookdiscussion3-15-23.gif?raw=true" height="192" width="340" alt="Power Point">
-                        <p>One of Dr. Clark&#8217;s takeaways is the idea of Senzai, a term applied to Japanese gardening. Senzai has its roots in the ancient Japanese capital of Kyoto and is used to describe a simple garden space, commonly containing at most 5 favorite species. Simple in stature, it is a place of profound peace. We were struck with the realization that according to Japanese gardening, one does not have to plant an entire expanse. Fields of green are nice, but a small space outside a window, on a shelf, in a corner of the yard, or in containers, will do just fine!</p>
-                        <img src="https://github.com/expansestream/butterflygarden/blob/main/IMG_0390.jpg?raw=true" height="150" width="auto" alt="Senzai Indoors">
-                        <p style="text-decoration: underline">Senzai Indoors</p>
-                        <div id="senzaiPlants">
-                           <p>Spider Plants</p>
-                           <p>Agavi</p>
-                           <p>Road Trip</p>
-                           <p>Amaryllis</p>
-                           <p>Cranton</p>
-                           <p>Birthday Assortment</p>
-                        </div>
-                        <img style="border-style: inset" src="https://github.com/expansestream/butterflygarden/blob/main/IMG_0948.jpg?raw=true" height="200" width="340" alt="CA Earth Day">
-               <img src="https://github.com/expansestream/butterflygarden/blob/main/IMG_0950.jpg?raw=true" height="455" width="auto" alt="Olla">
-               <br>
-               <br>
-               <p>jfarmsboulder was a guest presenter at Colorado Acdemy's 2025 Earth Day exhibition on April 22, 2025. Colorado Adacemy wanted to showcase the development of their butterfly garden and present options for the future.</p>
-               <p>To see the garden&#8217;s current configuration <a href="https://raw.githubusercontent.com/expansestream/butterflygarden/b700baede34cab0c0ae4e77df9f95779076acc33/Full_Garden6.jpg" target="display">click here</a>.</p>
-               <p>Unfortunately, there is no such thing as a garden that can be entirely left to its own devices. A growing space needs some human intervention, regardless of how small. The biggest ongoing requirement is a dependable irrigation system. An extensive drip irrigation system was installed when the garden was initially planted. Over the next 2 years, the drip system was abandoned in favor of over-head irrigation (a sprinkler system), brought about by the irregular survival of previous plantings. For the past two years, the garden has persisted with the help of natural rainfall.</p> 
-               <p>As a suggestion, in keeping with the concept of Senzai, CA may wish to establish a system of ollas (as discussed above in <span style="text-decoration:underline">Countryside & Small Stock Journal</span> &#8217;s December 2014 issue). An olla is an unglazed clay pot holding 2 gallons of water, buried in the ground. As shown in the top figure, such a system will irrigate a 3 foot diameter circle. If the outside diameter of the olla is 10 inches, the irrigated area is approximately 12 square feet.</p>
-               <p>If jfarmsboulder can answer any questions, please reach out!</p>
-               <p style="text-align: center">jfarmsboulder 9127 West Radcliffe Drive Littleton, CO 80123-1125  (303) 638-1965 <a href="mailto:jfarmsboulder@gmail.com">jfarmsboulder@gmail.com</a></p>--->  
-            </div>
+<t/body> 
+        <div id="C">
+            <button id="cancelorder" class="USA">Submit</button>
         </div>
+        <div id="D">
+            <input type="button" onclick="myFunction()" value="Reset">
+        </div>
+        </dialog>  
+    </form>
+
+<script>
+
+        document.getElementById("B").addEventListener("click",clear,false);
+            function clear() {
+            this.style.display = 'none';
+        }
+
+         document.getElementById("B").addEventListener("click",table_Location, false);
+        function table_Location() {
+            const para = document.createElement("h4");
+         para.textContent = ("Table 12 Seat 1");
+         //h5.textSize = 'large';
+         document.id=test.appendChild(para);
+         para.style.color = 'blue';
+         para.style.textAlign = 'center';
+        };
+
+            function myFunction() {
+            document.getElementById("myForm").reset();
+            };
+
+            document.getElementById("B").addEventListener("click",discreption11,false);
+           function discreption11() {
+                dialog = document.getElementById("order");
+                dialog.show();
+           };
+
+           document.getElementById("cancelorder").addEventListener("click",discreption12,false);
+           function discreption12() {
+                dialog = document.getElementById("order");
+                dialog.close();               
+           };
+           
+        </script>
+
       </div>
    </body>
 </html>
