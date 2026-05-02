@@ -10,7 +10,7 @@
             background-color: lightgray;
          }
           #container {
-            max-width: 90em;
+            /*max-width: 90em;
             margin: -4em 15em 5em 9em;
              /*margin: 1em auto;*/
             box-sizing: border-box;
@@ -32,11 +32,23 @@
                 top 0.2s,
                 box-shadow 0.2s;
             } 
-         img {
+            .USA:active {
+            /*background-color:red;*/
+            top: 3px;
+            box-shadow: 0 1px 2px rgba(0,0,0,.5);
+            transition-timing-function: ease-in;
+            transition-duration: 5s;
+            } 
+         #imgPrimary {
+            width: 70em;
+            height: 50em;
             border-width: .5em;
             border-style: solid;
             border-color: lemonchiffon;
-            float: left;
+            /*float: left;*/
+            background-image: url("https://github.com/democracy-2025/democracy/blob/main/642.jpg?raw=true");
+            background-size: cover;
+            z-index: 1;
          }
          .fade {
             animation-name: fade;
@@ -48,18 +60,34 @@
             }
          #B {
             position: absolute;
-            top: 14em;
+            top: 16.5em;
             left: 17em;
          }
+          /*#Bcheck {
+            position: absolute;
+            top: 14em;
+            left: 16em;
+         }*/
+         
          #C {
             position: absolute;
             top: 30.5em;
-            left: 5em;
+            left: 6em;
          }
+         /*#Ccheck {
+            position: absolute;
+            top: 50em;
+            left: 50em;
+         }*/
          #D {
             position: absolute;
             top: 30.5em;
             left: 16em;
+         }
+        #E {
+            position: absolute;
+            top: 18em;
+            left: 10.5em;
          }
          dialog {
             position: absolute;
@@ -74,12 +102,10 @@
 
          input[type="checkbox"] {
         display: block;
-        transform: scale(4);
+        transform: scale(3);
         margin-top: 2em;
         margin-left: 2em;
     }
-
-
 
     .custom-checkbox-hambuger {
         display: inline-block;
@@ -154,28 +180,99 @@
       margin-left: 0.25em;
     }
     p {
-        text-decoration: underline;
+         position: absolute;
+            top: 10em;
+            left: 10em;
+            z-index: 3;
     }
-    h3, h4 {
+    h3, h4, h5, h6 {
         font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+            top: 21.5em;
+            left: 16em;
     }
-   
+    img {
+        background-color: lightgray;
+    }
+    #demo {
+    position: absolute;
+            top: 20.5em;
+            left: 16em;  
+    }
+    #demo1 {
+    position: absolute;
+            top: 22em;
+            left: 8em;  
+    }
+    /*#demo2 {
+    position: absolute;
+            top: 22em;
+            left: 10em;  
+    }*/
+    #check {
+    position: absolute;
+            top: 21em;
+            left: 26em;
+    }
+    .checkbox-group { margin-bottom: 10px; }
          </style>
    <body>
       <div id="container">
-        <!---<div id="layout">--->
-            <!---<div id="one">--->
                 <div class="fade">
-                    <img src = "https://github.com/democracy-2025/democracy/blob/main/642.jpg?raw=true" height = 562 width = 688 alt = "642 Floor Plan"></img>
-                    <p id="B"><button class="USA">Order</button></p>
+                    <input id="imgPrimary">
+                    <p id="B"><button class="USA">Seat 1</button></p>
+                    <p id="E"><button class="USA">Seat 2</button></p>
+                    <div id="test0"></div>
+                    <div id="test1>"></div>
+                    <div id="test2>"></div>
+                   
+                        <!---<div id="Bcheck">
+                            <div id="image-container"></div>
+                        </div>--->
+
+                            <p style="font-size: smaller" id = "demo"></p>
+                            <p style="font-size: smaller" id = "demo1"></p>
+                            <!---<p style="font-size: smaller" id = "demo2"></p>--->
+
+                            <!---<button style="font-size: smaller" id = "check"><img src = "https://media.gettyimages.com/id/173540444/photo/check-mark-made-with-a-wide-tip-marker-pen.jpg?s=612x612&w=0&k=20&c=vkaleaQKMgToPam1Fxb-UL-K36jogAIVvnpGYjdhkxQ=" height = 12.5 width = 12.5 alt = "Check"></img></button>--->
+                             
                 </div>
-               <!---<p id="C"><button class="USA">Order</button></p>--->
-            <!---</div>--->
-        <!---</div>--->
+
+                <h4>Table 12</h4>
+
+
+                
+        <!---<div class="checkbox-group">
+            <label><input type="checkbox" name="hobby" value="Reading"> Reading</label><br>
+            <label><input type="checkbox" name="hobby" value="Hamburger"><img src = "https://th.bing.com/th/id/OIG4.gvjozrVnnST1a5GUmwm5?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" height = 50 width = 50 alt = "Hambuger"></img></label><br>
+            <label><input type="checkbox" name="hobby" value="Traveling"> Traveling</label><br>
+            <label><input type="checkbox" name="hobby" value="Cooking"> Cooking</label><br>
+            <label><input type="checkbox" name="hobby" value="Gaming"> Gaming</label><br>
+        </div>
+
+        <p strong>Selected Array:</strong> <span id="output">[]</span></p>
+
+        <script>
+            document.getElementById("check").addEventListener("click", function() {
+    // Get all checkboxes with name="hobby"
+    const checkboxes = document.querySelectorAll('input[name="hobby"]:checked');
+    
+    // Convert NodeList to Array and map to values
+    const selectedValues = Array.from(checkboxes).map(cb => cb.value);
+
+    // Display the array
+    document.getElementById("output").textContent = JSON.stringify(selectedValues);
+            });
+        </script>--->
+
 
     <form id="myForm">
         <dialog id="order">
-            <div id="test"></div>
+            <!---<div id="test"></div>
+            <div id="test1"></div>
+            <div id="test2"></div>--->
+            
+
 <tbody>
     <table>
         <tr><td><input type="checkbox"></td><td><input class="custom-checkbox-hambuger"></td><td><input type="checkbox"></td><td><input class="custom-checkbox-cheeseburger"></td></tr>
@@ -193,44 +290,177 @@
         <div id="D">
             <input type="button" onclick="myFunction()" value="Reset">
         </div>
-        </dialog>  
+        </dialog> 
     </form>
-
+            <input type="button" onclick="clearAllStorage()" value="Reset localStorage">
 <script>
 
-        document.getElementById("B").addEventListener("click",clear,false);
-            function clear() {
-            this.style.display = 'none';
+    document.getElementById("demo").innerHTML =  localStorage.getItem("myCat");
+
+            //Relaod page
+            function clearAllStorage() {
+            localStorage.clear();
+            alert("All localStorage data cleared.");
+            location.reload(true);
         }
-
-         document.getElementById("B").addEventListener("click",table_Location, false);
-        function table_Location() {
-            const para = document.createElement("h4");
-         para.textContent = ("Table 12 Seat 1");
-         //h5.textSize = 'large';
-         document.id=test.appendChild(para);
-         para.style.color = 'blue';
-         para.style.textAlign = 'center';
-        };
-
-            function myFunction() {
+         
+        function myFunction() {
             document.getElementById("myForm").reset();
             };
 
             document.getElementById("B").addEventListener("click",discreption11,false);
            function discreption11() {
+
+             document.getElementById("B").style="background-color:red";
+
                 dialog = document.getElementById("order");
                 dialog.show();
-           };
+
+                /*document.getElementById("cancelorder").addEventListener("click",discreption15,false);
+           function discreption15() {*/
+            localStorage.setItem("myCat", "Ordered");
+            /* HERE !!!!!!!!!!  document.getElementById("check")*/
+    /*document.getElementById("demo").innerHTML =  localStorage.getItem("myCat");*/
+           }
+
+           
 
            document.getElementById("cancelorder").addEventListener("click",discreption12,false);
            function discreption12() {
-                dialog = document.getElementById("order");
-                dialog.close();               
-           };
-           
-        </script>
 
-      </div>
+            /*localStorage.setItem("myCat", "Ordered")*/
+
+                dialog = document.getElementById("order");
+                dialog.close();
+
+               
+
+           };
+
+</script>
+
+
+
+<!---<script>
+    document.getElementById("cancelorder").addEventListener("click",discreption15,false);
+           function discreption15() {
+    localStorage.setItem("myCat", "Ordered")
+    document.getElementById("demo").innerHTML =  localStorage.getItem("myCat");
+           }
+</script>--->
+
+
+
+<script>
+
+    
+
+    
+
+
+    
+
+    
+
+    
+
+
+
+        //const menu = ["Hambuger", "Fries", "Cole Snaw", "Diet Coke"];
+        //for (let i=0; i<menu.length; i++) {
+            //localStoreage.setItem("ourCat", "TaDa!");
+            //console.log(menu[i]);
+            //alert(menu[1]);
+            
+        //}
+            
+</script>
+
+    <script>
+
+        document.getElementById("demo1").innerHTML =  localStorage.getItem("yourCat");
+        
+
+            //Relaod page
+            function clearAllStorage() {
+            localStorage.clear();
+            alert("All localStorage data cleared.");
+            location.reload(true);
+        }
+         
+        function myFunction() {
+            document.getElementById("myForm").reset();
+            };
+
+            document.getElementById("E").addEventListener("click",discreption13,false);
+           function discreption13() {
+
+             document.getElementById("E").style="background-color:red";
+
+            
+
+                dialog = document.getElementById("order");
+                dialog.show();
+
+                
+                /*const menu = ["Hambuger", "Fries", "DietCoke"];
+                for (i=0; i<length.menu; i++) {
+                     const para = document.createElement("p");
+                    para.textContent = (menu[i]);
+                    document.id=test.appendChild(para);
+                }*/
+
+                /*const key = ["ourCat", "yourCat", "theirCat"];
+                const menu = ["Hambuger", "Fries", "DietCoke"];*/
+                localStorage.setItem("yourCat", "Ordered");
+                /*alert(menu[0]); //Hambuger
+                alert(key[0]); //ourCat
+                localStorage.setItem("(key[0])","(menu[0])");
+                //localStorage.setItem("theirCat", "Soup");*/
+
+                
+           
+                /*document.getElementById("cancelorder").addEventListener("click",discreption16,false);*/
+           
+    document.getElementById("demo1").innerHTML =  localStorage.getItem("yourCat");
+    /*localStorage.setItem("yourCat", "Ordered")*/
+           }
+
+           
+
+           document.getElementById("cancelorder").addEventListener("click",discreption14,false);
+           function discreption14() {
+
+          
+
+            /*localStorage.setItem("yourCat", "Ordered")*/
+
+                dialog = document.getElementById("order");
+                dialog.close();
+
+           };
+
+</script>
+
+<!---<script>
+    const menu = ["Hamburger", "Fries", "DietCoke"];
+                for (i=0; i<menu.length; i++) {
+                     const para = document.createElement("p");
+                    para.textContent = (menu[i]);
+                    document.id=test[i].appendChild(para);
+                }
+</script>--->
+
+
+
+
+
+
+
+</div>
    </body>
 </html>
+
+
+
+
