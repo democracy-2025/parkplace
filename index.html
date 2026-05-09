@@ -33,7 +33,7 @@
                 box-shadow 0.2s;
             } 
             .USA:active {
-            /*background-color:red;*/
+            background-color:red;
             top: 3px;
             box-shadow: 0 1px 2px rgba(0,0,0,.5);
             transition-timing-function: ease-in;
@@ -48,7 +48,7 @@
             /*float: left;*/
             background-image: url("https://github.com/democracy-2025/democracy/blob/main/642.jpg?raw=true");
             background-size: cover;
-            z-index: 1;
+            /*z-index: 1;*/
          }
          .fade {
             animation-name: fade;
@@ -58,42 +58,53 @@
             from {opacity: 0} 
             to {opacity: 1}
             }
-         #B {
+         #table12seat1 {
             position: absolute;
             top: 16.5em;
             left: 17em;
          }
-          /*#Bcheck {
+         #cancelmenu {
             position: absolute;
-            top: 14em;
-            left: 16em;
-         }*/
-         
-         #C {
-            position: absolute;
-            top: 30.5em;
-            left: 6em;
+            top: 1em;
+            left: 19em;
          }
-         /*#Ccheck {
+         #resetcheckbox {
             position: absolute;
-            top: 50em;
-            left: 50em;
-         }*/
-         #D {
-            position: absolute;
-            top: 30.5em;
-            left: 16em;
+            top: 6em;
+            left: 20em;
          }
-        #E {
+        #table12seat2 {
             position: absolute;
             top: 18em;
             left: 10.5em;
          }
+         #table12seat3 {
+            position: absolute;
+            top: 22em;
+            left: 9em;
+         }
+         #K {
+            position: absolute;
+            top: 27em;
+            left: 13em;
+         }
+         #N {
+            position: absolute;
+            top: 25.5em;
+            left: 21em;
+         }
+         #Q {
+            position: absolute;
+            top: 20em;
+            left: 22em;
+         }
          dialog {
             position: absolute;
-            top: 10em;
-            left: 28em;
-            height: 32em;
+            top: 5em;
+            left: 60em;
+            /*height: 32em;*/
+            height: 30em;
+            width: 24em;
             border-style: solid;
             border-width: .125em;
             border-color: black;
@@ -102,7 +113,8 @@
 
          input[type="checkbox"] {
         display: block;
-        transform: scale(3);
+        transform: scale(2);
+        padding: 0.125em;
         margin-top: 2em;
         margin-left: 2em;
     }
@@ -179,232 +191,555 @@
     table {
       margin-left: 0.25em;
     }
-    p {
-         position: absolute;
-            top: 10em;
-            left: 10em;
-            z-index: 3;
+    td {
+        font-size: medium;
     }
     h3, h4, h5, h6 {
         font-family: Arial, Helvetica, sans-serif;
         position: absolute;
-            top: 21.5em;
-            left: 16em;
+            /*top: 21.5em;
+            left: 16em;*/
     }
     img {
         background-color: lightgray;
     }
-    #demo {
+    #check1 {
     position: absolute;
-            top: 20.5em;
-            left: 16em;  
+            top: 4.5em;
+            left: 11.25em;  
     }
-    #demo1 {
+    #check2 {
     position: absolute;
-            top: 22em;
-            left: 8em;  
+            top: 5.5em;
+            left: 11.25em;  
     }
-    /*#demo2 {
+    #check3 {
     position: absolute;
-            top: 22em;
-            left: 10em;  
+            top: 6.5em;
+            left: 11.25em;  
+    }
+    #check4 {
+    position: absolute;
+            top: 7.5em;
+            left: 11.25em;  
+    }
+    #check5 {
+    position: absolute;
+            top: 8.5em;
+            left: 11.25em;  
+    }
+    #check6 {
+    position: absolute;
+            top: 9.5em;
+            left: 11.25em;  
+    }
+    #check7 {
+    position: absolute;
+            top: 10.5em;
+            left: 11.25em;  
+    }
+    #check8 {
+    position: absolute;
+            top: 4.5em;
+            left: 11.25em;  
+    }
+    #check9 {
+    position: absolute;
+            top: 5.5em;
+            left: 11.25em;  
+    }
+    #check10 {
+    position: absolute;
+            top: 6.5em;
+            left: 11.25em;  
+    }
+    #check11 {
+    position: absolute;
+            top: 7.5em;
+            left: 11.25em;  
+    }
+    #check12 {
+    position: absolute;
+            top: 8.5em;
+            left: 11.25em;  
+    }
+    #check13 {
+    position: absolute;
+            top: 9.5em;
+            left: 11.25em;  
+    }
+    #check14 {
+    position: absolute;
+            top: 10.5em;
+            left: 11.25em;  
+    }
+    #check15 {
+    position: absolute;
+            top: 4.5em;
+            left: 11.25em;  
+    }
+    #check16 {
+    position: absolute;
+            top: 5.5em;
+            left: 11.25em;  
+    }
+    #check17 {
+    position: absolute;
+            top: 6.5em;
+            left: 11.25em;  
+    }
+    #check18 {
+    position: absolute;
+            top: 7.5em;
+            left: 11.25em;  
+    }
+    #check19 {
+    position: absolute;
+            top: 8.5em;
+            left: 11.25em;  
+    }
+    #check20 {
+    position: absolute;
+            top: 9.5em;
+            left: 11.25em;  
+    }
+    #check21 {
+    position: absolute;
+            top: 10.5em;
+            left: 11.25em;  
+    }
+    /*#test1 {
+    position: absolute;
+            top: -15em;     
     }*/
-    #check {
+    #test2 {
     position: absolute;
-            top: 21em;
-            left: 26em;
+            top: 18.5em;
+            left: 11.25em;  
     }
-    .checkbox-group { margin-bottom: 10px; }
-         </style>
+    /*#test3 {
+    position: absolute;
+            top: 8.5em;
+            left: 11.25em;  
+    }
+    #test4 {
+    position: absolute;
+            top: 9.5em;
+            left: 11.25em;  
+    }
+    #test5 {
+    position: absolute;
+            top: 10.5em;
+            left: 11.25em;  
+    }
+    #test6 {
+    position: absolute;
+            top: 11.5em;
+            left: 11.25em;  
+    }
+    #test7 {
+    position: absolute;
+            top: 12.5em;
+            left: 11.25em;  
+    }*/
+    #notes {
+      position: absolute;
+      top: 14.5em;
+      left: 11.25em;
+    }
+</style>
+
    <body>
       <div id="container">
                 <div class="fade">
                     <input id="imgPrimary">
-                    <p id="B"><button class="USA">Seat 1</button></p>
-                    <p id="E"><button class="USA">Seat 2</button></p>
-                    <div id="test0"></div>
-                    <div id="test1>"></div>
-                    <div id="test2>"></div>
+                    <p id="table12seat1"><button class="USA">Seat 1</button></p>
+                    <p id="table12seat2"><button class="USA">Seat 2</button></p>
+                    <p id="table12seat3"><button class="USA">Seat 3</button></p>
+                    <p id="K"><button class="USA">Seat 4</button></p>
+                    <p id="N"><button class="USA">Seat 5</button></p>
+                    <p id="Q"><button class="USA">Seat 6</button></p>
+                    
+
+                <h4 style="top:21.5em; left:16em";>Table 12</h4>
+                <h4 style="top:8em; left:23.75em";>Table 6</h4>
+                <h4 style="top:22em; left:29.25em; transform:rotate(-90deg)";>Table 18</h4>
+                <h4 style="top:29.25em; left:48em";>Table 24</h4>
+
+
+    <form id="myForm1">
+        <dialog id="menu1">
+            <!---<div id="test1"></div>--->
+                  
+           
+                <tbody>
+                    <table>
+                        <tr><td><span style="color:blue"><em><b>Table 12 Seat 1:</b></em></span></td></tr>
+                        <tr><td><label><input type="checkbox" id="hamCheckbox"></label></td></tr>
+                        <tr><td>Hamburger</td></tr>
+                        <tr></tr><td><label><input type="checkbox" id="cheeseCheckbox"></label></td></tr>
+                        <tr><td>Cheeseburger</td></tr>
+                        <tr><td><label><input type="checkbox" id="hotdogCheckbox"></label><tr>
+                        <tr><td>Hot Dog</td></tr>
+                        </td><td><label><input type="checkbox" id="veggieCheckbox"></label></td></tr>
+                        <tr><td>Veggie Wrap</td></tr>
+                        <tr><td><label><input type="checkbox" id="crispyCheckbox"></label></td></tr>
+                        <tr><td>Crispy Chicken Salad</td></tr>
+                        <td><label><input type="checkbox" id="montiCheckbox"></label></td></tr>
+                        <tr><td>Monti Cristo</td></tr>
+                    </table>
+                </tbody>
+
+
+                  <p id = "check1"></p>
+                  <p id = "check2"></p>
+                  <p id = "check3"></p>
+                  <p id = "check4"></p>
+                  <p id = "check5"></p>
+                  <p id = "check6"></p>
+                  <p id = "check7"></p>
+
+                  <div id="notes">
+                     <textarea id="myTextarea" placeholder="25 words or less" rows="3" columns="10"></textarea>
+                  </div>
+
+
+                    <div id="cancelmenu">
+                            <button id="cancelmenu1" class="USA">Submit</button>
+                    </div>
+
+                    <div id="resetcheckbox">
+                            <input type="button" onclick="myFunction()" value="Reset">
+                    </div>
+
+                    <!---<p><button id="saveBtn">Save Note</button>--->
                    
-                        <!---<div id="Bcheck">
-                            <div id="image-container"></div>
-                        </div>--->
-
-                            <p style="font-size: smaller" id = "demo"></p>
-                            <p style="font-size: smaller" id = "demo1"></p>
-                            <!---<p style="font-size: smaller" id = "demo2"></p>--->
-
-                            <!---<button style="font-size: smaller" id = "check"><img src = "https://media.gettyimages.com/id/173540444/photo/check-mark-made-with-a-wide-tip-marker-pen.jpg?s=612x612&w=0&k=20&c=vkaleaQKMgToPam1Fxb-UL-K36jogAIVvnpGYjdhkxQ=" height = 12.5 width = 12.5 alt = "Check"></img></button>--->
-                             
-                </div>
-
-                <h4>Table 12</h4>
-
-
-                
-        <!---<div class="checkbox-group">
-            <label><input type="checkbox" name="hobby" value="Reading"> Reading</label><br>
-            <label><input type="checkbox" name="hobby" value="Hamburger"><img src = "https://th.bing.com/th/id/OIG4.gvjozrVnnST1a5GUmwm5?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" height = 50 width = 50 alt = "Hambuger"></img></label><br>
-            <label><input type="checkbox" name="hobby" value="Traveling"> Traveling</label><br>
-            <label><input type="checkbox" name="hobby" value="Cooking"> Cooking</label><br>
-            <label><input type="checkbox" name="hobby" value="Gaming"> Gaming</label><br>
-        </div>
-
-        <p strong>Selected Array:</strong> <span id="output">[]</span></p>
-
-        <script>
-            document.getElementById("check").addEventListener("click", function() {
-    // Get all checkboxes with name="hobby"
-    const checkboxes = document.querySelectorAll('input[name="hobby"]:checked');
-    
-    // Convert NodeList to Array and map to values
-    const selectedValues = Array.from(checkboxes).map(cb => cb.value);
-
-    // Display the array
-    document.getElementById("output").textContent = JSON.stringify(selectedValues);
-            });
-        </script>--->
-
-
-    <form id="myForm">
-        <dialog id="order">
-            <!---<div id="test"></div>
-            <div id="test1"></div>
-            <div id="test2"></div>--->
-            
-
-<tbody>
-    <table>
-        <tr><td><input type="checkbox"></td><td><input class="custom-checkbox-hambuger"></td><td><input type="checkbox"></td><td><input class="custom-checkbox-cheeseburger"></td></tr>
-        <tr><td></td><td><div id="placement">Hamburger</td></div><td></td><td><div id="placement">Cheeseburger</td></div></tr>
-        <tr><td><input type="checkbox"></td><td><input class="custom-checkbox-hotdog"></td><td><input type="checkbox"></td><td><input class="custom-checkbox-veggiewrap"></td></tr>
-        <tr><td></td><td><div id="placement">Hotdog</td></div><td></td><td><div id="placement">Veggie Wrap</td></div></tr>
-        <tr><td><input type="checkbox"></td><td><input class="custom-checkbox-crispychickensalad"></td><td><input type="checkbox"></td><td><input class="custom-checkbox-monticristo"></td></tr>
-        <tr><td></td><td><div id="placement">Crispy Chicken</td></div><td></td><td><div id="placement">Monti Cristo</td></div></tr>
-        <tr><td></td><td><div id="placement">Salad</td></div><td></tr>
-    </table>
-<t/body> 
-        <div id="C">
-            <button id="cancelorder" class="USA">Submit</button>
-        </div>
-        <div id="D">
-            <input type="button" onclick="myFunction()" value="Reset">
-        </div>
         </dialog> 
     </form>
+
             <input type="button" onclick="clearAllStorage()" value="Reset localStorage">
+
 <script>
 
-    document.getElementById("demo").innerHTML =  localStorage.getItem("myCat");
+            //Reloads checkboxes
+            function myFunction() {
+            document.getElementById("myForm1").reset();
+            };
 
             //Relaod page
             function clearAllStorage() {
             localStorage.clear();
             alert("All localStorage data cleared.");
             location.reload(true);
-        }
-         
-        function myFunction() {
-            document.getElementById("myForm").reset();
             };
 
-            document.getElementById("B").addEventListener("click",discreption11,false);
-           function discreption11() {
+            document.getElementById("check1").innerHTML =  localStorage.getItem("myHamburger");
+            document.getElementById("check2").innerHTML =  localStorage.getItem("myCheeseburger");
+            document.getElementById("check3").innerHTML =  localStorage.getItem("myHotDog");
+            document.getElementById("check4").innerHTML =  localStorage.getItem("myVeggie");
+            document.getElementById("check5").innerHTML =  localStorage.getItem("myCrispy");
+            document.getElementById("check6").innerHTML =  localStorage.getItem("myMonti");
+            document.getElementById("check7").innerHTML =  localStorage.getItem("mystorageKey");
 
-             document.getElementById("B").style="background-color:red";
+            document.getElementById("table12seat1").addEventListener("click",discreption1,false);
+           function discreption1() {
 
-                dialog = document.getElementById("order");
+             document.getElementById("table12seat1").style="background-color:red";
+
+                dialog = document.getElementById("menu1");
                 dialog.show();
-
-                /*document.getElementById("cancelorder").addEventListener("click",discreption15,false);
-           function discreption15() {*/
-            localStorage.setItem("myCat", "Ordered");
-            /* HERE !!!!!!!!!!  document.getElementById("check")*/
-    /*document.getElementById("demo").innerHTML =  localStorage.getItem("myCat");*/
-           }
-
-           
-
-           document.getElementById("cancelorder").addEventListener("click",discreption12,false);
-           function discreption12() {
-
-            /*localStorage.setItem("myCat", "Ordered")*/
-
-                dialog = document.getElementById("order");
-                dialog.close();
-
-               
-
            };
 
-</script>
+           document.getElementById("cancelmenu1").addEventListener("click",discreption2,false);
+           function discreption2() {
+         
+             const hamcheckbox = document.getElementById("hamCheckbox");  
+             if (hamcheckbox.checked) {
+                localStorage.setItem("myHamburger", "Hamburger");
+            }; 
 
+            const cheesecheckbox = document.getElementById("cheeseCheckbox");  
+             if (cheesecheckbox.checked) {
+                localStorage.setItem("myCheeseburger", "Cheeseburger");
+            }; 
 
+            const hotdogcheckbox = document.getElementById("hotdogCheckbox");  
+             if (hotdogcheckbox.checked) {
+                localStorage.setItem("myHotDog", "Hot Dog");
+            }; 
 
+            const veggiecheckbox = document.getElementById("veggieCheckbox");  
+             if (veggiecheckbox.checked) {
+                localStorage.setItem("myVeggie", "Veggie Wrap");
+            }; 
 
+            const crispycheckbox = document.getElementById("crispyCheckbox");  
+             if (crispycheckbox.checked) {
+                localStorage.setItem("myCrispy", "Crispy Chicken Salad");
+            }; 
 
-
-
-
-
-    <script>
-
-        document.getElementById("demo1").innerHTML =  localStorage.getItem("yourCat");
+            const monticheckbox = document.getElementById("montiCheckbox");  
+             if (monticheckbox.checked) {
+                localStorage.setItem("myMonti", "Monti Cristo");
+            }; 
         
+                const textarea = document.getElementById("myTextarea").value;
+                const storageKey = 'myTextareaContent';
+                localStorage.setItem("mystorageKey", textarea);
+
+                dialog = document.getElementById("menu1");
+                dialog.close();
+        };
+         
+</script>
+
+
+<form id="myForm2">
+        <dialog id="menu2">
+            <!---<div id="test2"></div>--->
+                  
+           
+                <tbody>
+                    <table>
+                        <tr><td><span style="color:blue"><em><b>Table 12 Seat 2:</b></em></span></td></tr>
+                        <tr><td><label><input type="checkbox" id="hammCheckbox"></label></td></tr>
+                        <tr><td>Hamburger</td></tr>
+                        <tr></tr><td><label><input type="checkbox" id="cheeseeCheckbox"></label></td></tr>
+                        <tr><td>Cheeseburger</td></tr>
+                        <tr><td><label><input type="checkbox" id="hotdoggCheckbox"></label><tr>
+                        <tr><td>Hot Dog</td></tr>
+                        </td><td><label><input type="checkbox" id="veggieeCheckbox"></label></td></tr>
+                        <tr><td>Veggie Wrap</td></tr>
+                        <tr><td><label><input type="checkbox" id="crispyyCheckbox"></label></td></tr>
+                        <tr><td>Crispy Chicken Salad</td></tr>
+                        <td><label><input type="checkbox" id="montiiCheckbox"></label></td></tr>
+                        <tr><td>Monti Cristo</td></tr>
+                    </table>
+                </tbody>
+
+                  
+
+                  <p id = "check8"></p>
+                  <p id = "check9"></p>
+                  <p id = "check10"></p>
+                  <p id = "check11"></p>
+                  <p id = "check12"></p>
+                  <p id = "check13"></p>
+                  <p id = "check14"></p>
+
+                  <div id="notes">
+                     <!---<p>Resident Wishes:</p>--->
+                     <textarea id="yourTextarea" placeholder="25 words or less" rows="3" columns="10"></textarea>
+                  </div>
+
+
+                    <div id="cancelmenu">
+                            <button id="cancelmenu2" class="USA">Submit</button>
+                    </div>
+                    <div id="resetcheckbox">
+                            <input type="button" onclick="yourFunction()" value="Reset">
+                    </div>
+                   
+        </dialog> 
+    </form>
+
+<script>
+
+            //Reloads checkboxes
+            function yourFunction() {
+            document.getElementById("myForm2").reset();
+            };
 
             //Relaod page
             function clearAllStorage() {
             localStorage.clear();
             alert("All localStorage data cleared.");
             location.reload(true);
-        }
-         
-        function myFunction() {
-            document.getElementById("myForm").reset();
             };
 
-            document.getElementById("E").addEventListener("click",discreption13,false);
-           function discreption13() {
+            document.getElementById("check8").innerHTML =  localStorage.getItem("yourHamburger");
+            document.getElementById("check9").innerHTML =  localStorage.getItem("yourCheeseburger");
+            document.getElementById("check10").innerHTML =  localStorage.getItem("yourHotDog");
+            document.getElementById("check11").innerHTML =  localStorage.getItem("yourVeggie");
+            document.getElementById("check12").innerHTML =  localStorage.getItem("yourCrispy");
+            document.getElementById("check13").innerHTML =  localStorage.getItem("yourMonti");
+            document.getElementById("check14").innerHTML =  localStorage.getItem("yourstorageKey");
 
-             document.getElementById("E").style="background-color:red";
+            document.getElementById("table12seat2").addEventListener("click",discreption3,false);
+           function discreption3() {
 
-            
+             document.getElementById("table12seat2").style="background-color:red";
 
-                dialog = document.getElementById("order");
+                dialog = document.getElementById("menu2");
                 dialog.show();
-
-                
-                
-                localStorage.setItem("yourCat", "Ordered");
-                
-           }
-
-           
-
-           document.getElementById("cancelorder").addEventListener("click",discreption14,false);
-           function discreption14() {
-
-          
-
-          
-
-                dialog = document.getElementById("order");
-                dialog.close();
-
            };
 
+           document.getElementById("cancelmenu2").addEventListener("click",discreption4,false);
+           function discreption4() {
+         
+             const hamcheckbox = document.getElementById("hammCheckbox");  
+             if (hamcheckbox.checked) {
+                localStorage.setItem("yourHamburger", "Hamburger");
+            }; 
+
+            const cheesecheckbox = document.getElementById("cheeseeCheckbox");  
+             if (cheesecheckbox.checked) {
+                localStorage.setItem("yourCheeseburger", "Cheeseburger");
+            }; 
+
+            const hotdogcheckbox = document.getElementById("hotdoggCheckbox");  
+             if (hotdogcheckbox.checked) {
+                localStorage.setItem("yourHotDog", "Hot Dog");
+            }; 
+
+            const veggiecheckbox = document.getElementById("veggieeCheckbox");  
+             if (veggiecheckbox.checked) {
+                localStorage.setItem("yourVeggie", "Veggie Wrap");
+            }; 
+
+            const crispycheckbox = document.getElementById("crispyyCheckbox");  
+             if (crispycheckbox.checked) {
+                localStorage.setItem("yourCrispy", "Crispy Chicken Salad");
+            }; 
+
+            const monticheckbox = document.getElementById("montiiCheckbox");  
+             if (monticheckbox.checked) {
+                localStorage.setItem("yourMonti", "Monti Cristo");
+            }; 
+        
+                const textarea = document.getElementById("yourTextarea").value;
+                localStorage.setItem("yourstorageKey", textarea);
+
+                dialog = document.getElementById("menu2");
+                dialog.close();
+        };
+       
 </script>
 
 
+<form id="myForm3">
+        <dialog id="menu3">
+            <!---<div id="test3"></div>--->
+           
+                <tbody>
+                    <table>
+                        <tr><td><span style="color:blue"><em><b>Table 12 Seat 3:</b></em></span></td></tr>
+                        <tr><td><label><input type="checkbox" id="hammmCheckbox"></label></td></tr>
+                        <tr><td>Hamburger</td></tr>
+                        <tr></tr><td><label><input type="checkbox" id="cheeseeeCheckbox"></label></td></tr>
+                        <tr><td>Cheeseburger</td></tr>
+                        <tr><td><label><input type="checkbox" id="hotdogggCheckbox"></label><tr>
+                        <tr><td>Hot Dog</td></tr>
+                        </td><td><label><input type="checkbox" id="veggieeeCheckbox"></label></td></tr>
+                        <tr><td>Veggie Wrap</td></tr>
+                        <tr><td><label><input type="checkbox" id="crispyyyCheckbox"></label></td></tr>
+                        <tr><td>Crispy Chicken Salad</td></tr>
+                        <td><label><input type="checkbox" id="montiiiCheckbox"></label></td></tr>
+                        <tr><td>Monti Cristo</td></tr>
+                    </table>
+                </tbody>
+
+                  
+
+                  <p id = "check15"></p>
+                  <p id = "check16"></p>
+                  <p id = "check17"></p>
+                  <p id = "check18"></p>
+                  <p id = "check19"></p>
+                  <p id = "check20"></p>
+                  <p id = "check21"></p>
+
+                  <div id="notes">
+                     <!---<p>Resident Wishes:</p>--->
+                     <textarea id="ourTextarea" placeholder="25 words or less" rows="3" columns="10"></textarea>
+                  </div>
 
 
+                    <div id="cancelmenu">
+                            <button id="cancelmenu3" class="USA">Submit</button>
+                    </div>
+                    <div id="resetcheckbox">
+                            <input type="button" onclick="ourFunction()" value="Reset">
+                    </div>
+                   
+        </dialog> 
+    </form>
 
+<script>
 
+            //Reloads checkboxes
+            function ourFunction() {
+            document.getElementById("myForm3").reset();
+            };
 
+            //Relaod page
+            function clearAllStorage() {
+            localStorage.clear();
+            alert("All localStorage data cleared.");
+            location.reload(true);
+            };
 
+            document.getElementById("check15").innerHTML =  localStorage.getItem("ourHamburger");
+            document.getElementById("check16").innerHTML =  localStorage.getItem("ourCheeseburger");
+            document.getElementById("check17").innerHTML =  localStorage.getItem("ourHotDog");
+            document.getElementById("check18").innerHTML =  localStorage.getItem("ourVeggie");
+            document.getElementById("check19").innerHTML =  localStorage.getItem("ourCrispy");
+            document.getElementById("check20").innerHTML =  localStorage.getItem("ourMonti");
+            document.getElementById("check21").innerHTML =  localStorage.getItem("ourstorageKey");
+
+            document.getElementById("table12seat3").addEventListener("click",discreption3,false);
+           function discreption3() {
+
+             document.getElementById("table12seat3").style="background-color:red";
+
+                dialog = document.getElementById("menu3");
+                dialog.show();
+           };
+
+           document.getElementById("cancelmenu3").addEventListener("click",discreption5,false);
+           function discreption5() {
+         
+             const hamcheckbox = document.getElementById("hammmCheckbox");  
+             if (hamcheckbox.checked) {
+                localStorage.setItem("ourHamburger", "Hamburger");
+            }; 
+
+            const cheesecheckbox = document.getElementById("cheeseeeCheckbox");  
+             if (cheesecheckbox.checked) {
+                localStorage.setItem("ourCheeseburger", "Cheeseburger");
+            }; 
+
+            const hotdogcheckbox = document.getElementById("hotdogggCheckbox");  
+             if (hotdogcheckbox.checked) {
+                localStorage.setItem("ourHotDog", "Hot Dog");
+            }; 
+
+            const veggiecheckbox = document.getElementById("veggieeeCheckbox");  
+             if (veggiecheckbox.checked) {
+                localStorage.setItem("ourVeggie", "Veggie Wrap");
+            }; 
+
+            const crispycheckbox = document.getElementById("crispyyyCheckbox");  
+             if (crispycheckbox.checked) {
+                localStorage.setItem("ourCrispy", "Crispy Chicken Salad");
+            }; 
+
+            const monticheckbox = document.getElementById("montiiiCheckbox");  
+             if (monticheckbox.checked) {
+                localStorage.setItem("ourMonti", "Monti Cristo");
+            }; 
+        
+                const textarea = document.getElementById("ourTextarea").value;
+                localStorage.setItem("ourstorageKey", textarea);
+                
+                dialog = document.getElementById("menu3");
+                dialog.close();
+        };
+       
+</script>
 
 </div>
-   </body>
+</body>
 </html>
 
 
