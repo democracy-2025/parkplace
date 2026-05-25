@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>iPad Parkplace Dinning Room</title>
    </head>
+
       <style>
          body {
             background-color: lightgray;
@@ -83,12 +84,12 @@
             top: 22em;
             left: 9em;
          }
-         #K {
+         #table12seat4 {
             position: absolute;
             top: 27em;
             left: 13em;
          }
-         #N {
+         #table12seat5 {
             position: absolute;
             top: 25.5em;
             left: 21em;
@@ -347,30 +348,31 @@
       top: 14.5em;
       left: 11.25em;
     }
+    select {
+        background-color: darkkhaki;
+    }
 </style>
 
    <body>
       <div id="container">
+
                 <div class="fade">
                     <input id="imgPrimary">
                     <p id="table12seat1"><button class="USA">Seat 1</button></p>
                     <p id="table12seat2"><button class="USA">Seat 2</button></p>
                     <p id="table12seat3"><button class="USA">Seat 3</button></p>
-                    <p id="K"><button class="USA">Seat 4</button></p>
-                    <p id="N"><button class="USA">Seat 5</button></p>
+                    <p id="table12seat4"><button class="USA">Seat 4</button></p>
+                    <p id="table12seat5"><button class="USA">Seat 5</button></p>
                     <p id="Q"><button class="USA">Seat 6</button></p>
                     
-
                 <h4 style="top:21.5em; left:16em";>Table 12</h4>
                 <h4 style="top:8em; left:23.75em";>Table 6</h4>
                 <h4 style="top:22em; left:29.25em; transform:rotate(-90deg)";>Table 18</h4>
                 <h4 style="top:29.25em; left:48em";>Table 24</h4>
 
-
     <form id="myForm1">
         <dialog id="menu1">
-            <!---<div id="test1"></div>--->
-                  
+            <!---<div id="test1"></div>---> 
            
                 <tbody>
                     <table>
@@ -412,7 +414,7 @@
                             <input type="button" onclick="myFunction()" value="Reset">
                     </div>
 
-                    <!---<p><button id="saveBtn">Save Note</button>--->
+                    
                    
         </dialog> 
     </form>
@@ -484,7 +486,6 @@
             }; 
         
                 const textarea = document.getElementById("myTextarea").value;
-                const storageKey = 'myTextareaContent';
                 localStorage.setItem("mystorageKey", textarea);
 
                 dialog = document.getElementById("menu1");
@@ -620,8 +621,24 @@
 <form id="myForm3">
         <dialog id="menu3">
             <!---<div id="test3"></div>--->
+
+            <header>
+
+        <div id="open">
+           <button class="button" id="design">About</button>
+           <button class="button" onclick="myFunction()">Help Desk</button>
+           <div class="dropdown-content" id="myDropdown">
+                <button type="button" style="font-size: smaller;" id="powerup">Powering Up</button>
+                <button type="button" style="font-size: smaller;" id="noaudio">No Audio</button>
+                <button type="button" style="font-size: smaller;" id="nocamera">No Cameras</button>
+                <button type="button" style="font-size: smaller;" id="copyclipid">Copying Clip-ID</button>
+                <button type="button" style="font-size: smaller;" id="dagwellsound">Dagwell Soundboard</button>
+            </div>
+        </div>
+
+        </header>     
            
-                <tbody>
+                <!---<tbody>
                     <table>
                         <tr><td><span style="color:blue"><em><b>Table 12 Seat 3:</b></em></span></td></tr>
                         <tr><td><label><input type="checkbox" id="hammmCheckbox"></label></td></tr>
@@ -637,7 +654,7 @@
                         <td><label><input type="checkbox" id="montiiiCheckbox"></label></td></tr>
                         <tr><td>Monti Cristo</td></tr>
                     </table>
-                </tbody>
+                </tbody>--->
 
                   
 
@@ -687,8 +704,8 @@
             document.getElementById("check20").innerHTML =  localStorage.getItem("ourMonti");
             document.getElementById("check21").innerHTML =  localStorage.getItem("ourstorageKey");
 
-            document.getElementById("table12seat3").addEventListener("click",discreption3,false);
-           function discreption3() {
+            document.getElementById("table12seat3").addEventListener("click",discreption5,false);
+           function discreption5() {
 
              document.getElementById("table12seat3").style="background-color:red";
 
@@ -696,8 +713,8 @@
                 dialog.show();
            };
 
-           document.getElementById("cancelmenu3").addEventListener("click",discreption5,false);
-           function discreption5() {
+           document.getElementById("cancelmenu3").addEventListener("click",discreption6,false);
+           function discreption6() {
          
              const hamcheckbox = document.getElementById("hammmCheckbox");  
              if (hamcheckbox.checked) {
@@ -738,7 +755,108 @@
        
 </script>
 
-</div>
+<form id="myForm4">
+        <dialog id="menu4">
+                <tbody>
+                    <table>
+                        <tr><td><span style="color:blue"><em><b>Table 12 Seat 4:</b></em></span></td></tr>
+                    </table>
+                </tbody>
+                    <div id="cancelmenu">
+                            <button id="cancelmenu4" class="USA">Submit</button>
+                    </div>          
+        
+            <?php
+
+            $sweets_1 = "";
+            $sweets_2 = "";
+            $sweets_3 = "";
+            $sweets_4 = "";
+            $sweets_5 = "";
+            $sweets_6 = "";
+            $sweets_7 = "";
+            $sweets_8 = "";
+            $comment = "";
+            
+            $icecream = "chocolate strawberry vanilla pistachio pecan moose_tracks espresso peach";
+             $flavors = explode(" ", $icecream);
+             $sweets_1 = $flavors[0];
+             $sweets_2 = $flavors[1];
+             $sweets_3 = $flavors[2];
+             $sweets_4 = $flavors[3];
+             $sweets_5 = $flavors[4];
+             $sweets_6 = $flavors[5];
+             $sweets_7 = $flavors[6];
+             $sweets_8 = $flavors[7];
+             
+
+             if ($_SERVER["REQUEST_METHOD"] === "POST") {
+                $icecream = "chocolate strawberry vanilla pistachio pecan moose_tracks espresso peach";
+                 $flavors = explode(" ", $icecream);
+                $sweets_1 = $_POST['$flavors[0]'];
+                $sweets_2 = $_POST['$flavors[1]'];
+                $sweets_3 = $_POST['$flavors[2]'];
+                $sweets_4 = $_POST['$flavors[3]'];
+                $sweets_5 = $_POST['$flavors[4]'];
+                $sweets_6 = $_POST['$flavors[5]'];
+                $sweets_7 = $_POST['$flavors[6]'];
+                $sweets_8 = $_POST['$flavors[7]'];
+                }
+            ?>
+
+         <p><label for="sweets">Ice Cream:</label></p>
+        <form method="post" action="">
+        <!---<select required size="4" multiple>--->
+        <select size="6" multiple>
+            <option><?= htmlspecialchars($sweets_1) ?></option>
+            <option><?= htmlspecialchars($sweets_2) ?></option>
+            <option><?= htmlspecialchars($sweets_3) ?></option>
+            <option><?= htmlspecialchars($sweets_4) ?></option>
+            <option><?= htmlspecialchars($sweets_5) ?></option>
+            <option><?= htmlspecialchars($sweets_6) ?></option>
+            <option><?= htmlspecialchars($sweets_7) ?></option>
+            <option><?= htmlspecialchars($sweets_8) ?></option>
+        </select>
+            <br>
+            <br>
+            <p><label for="comment">Notes:</label></p>
+            <textarea name="comment" rows="5" cols="40"></textarea>
+
+        <?php 
+            if (isset($_POST['comment']) && in_array($_POST['comment'], [""])) {
+            $comment = $_POST['comment'];
+            }
+             $comment = test_input($comment);
+            function test_input($data) {
+            $data = htmlentities($data);
+            return $data;
+            }
+            //print $comment;
+         ?>
+
+         
+            
+
+    </dialog>
+</form>
+
+   
+        <script>
+
+            document.getElementById("table12seat4").addEventListener("click",discreption7,false);
+            function discreption7() {
+                document.getElementById("table12seat4").style="background-color:red";
+                dialog = document.getElementById("menu4");
+                dialog.show();
+            };
+                document.getElementById("cancelmenu4").addEventListener("click",discreption8,false);
+                function discreption8() {
+                dialog = document.getElementById("menu4");
+                dialog.close();
+        };
+       
+    </script>
+
 </body>
 </html>
 
